@@ -3,7 +3,7 @@
 // @namespace   http://www.sapo.pt/
 // @description Parses the build log output
 // @include     https://*/job/*/console*
-// @version     2
+// @version     2.1
 // @grant       none
 // ==/UserScript==
 
