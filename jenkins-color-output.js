@@ -21,11 +21,12 @@ addGlobalStyle(
     ".console-stage span { background-color: #2E5A61 !important; padding: 20px 0 !important; color: white !important; }"
 ); // 58A4B0 373F51
 
-var timer = setInterval(parse_console_blocks, 200);
+var timer = setInterval(parse_console_blocks, 0);
 
 var foundBlocksTimeout = 10;
 
 var patterns = [
+    // stages
     { stage: /\[Pipeline\] { \(/ },
     { hidden: /\[Pipeline\]/ },
 
@@ -50,7 +51,7 @@ var patterns = [
     { minor: /^Push event to/ },
     { minor: /^Seen/ },
 
-    // docker logs
+    // docker builds
     { minor: /The push refers to repository/ },
     { minor: /: Pulling from/ },
     { minor: /: Pulling fs layer/ },
@@ -73,6 +74,12 @@ var patterns = [
     { minor: /span> +Preparing wheel / },
     { minor: /span> +Building wheels / },
     { minor: /span> +Installing build dep/ },
+    { minor: /^Step [0-9]+/ },
+    { minor: /^ ---&gt; / },
+    { minor: /^fetch / },
+    { minor: /^OK: / },
+    { minor: /Removing intermediate container/ },
+    { minor: / digest: sha/ },
 
     // java/jenkins stack trace
     { faded: /at [a-z_]+\.[a-z]+.+\(/ },
@@ -86,14 +93,18 @@ var patterns = [
     { minor: /Building wheel for/ },
     { minor: /Stored in directory/ },
 
+    // generic logs
     { faded: /INFO/ },
     { warning: /warning/ },
+    { warning: /Warning/ },
     { warning: /WARNING/ },
     { error: /ERROR/ },
     { error: /error/ },
+    { success: /^Successfully/ },
 
     { important: /span> \+ / },
 
+    { minor: /\[htmlpublisher\]/ },
     { warning: /skipped due to/ },
     { minor: /\[WS-CLEANUP\]/ },
     { minor: /Slack Send Pipeline step running/ },
