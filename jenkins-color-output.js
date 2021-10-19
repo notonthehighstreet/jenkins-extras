@@ -99,6 +99,7 @@ var patterns = [
     { success: /^successfully/i },
 
     { important: /span> \+ / },
+    { important: /span>\+ / },
 
     { minor: /\[htmlpublisher\]/ },
     { warning: /skipped due to/ },
