@@ -108,7 +108,6 @@ var patterns = [
     { minor: /Slack Send Pipeline step running/ },
     { minor: /GitHub has been notified/ },
 
-    { warning: /Finished: ABORTED/ },
     { success: /Finished: SUCCESS/ },
     { error: /Finished: FAILURE/ }
 ];
