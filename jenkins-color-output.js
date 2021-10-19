@@ -100,7 +100,8 @@ var patterns = [
     { minor: /Stored in directory/ },
 
     // generic logs
-    { faded: /info/i },
+    { faded: /INFO/ },
+    { faded: /Info/ },
     { warning: /warning/i },
     { error: /error/i },
     { success: /^successfully/i },
