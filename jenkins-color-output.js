@@ -8,17 +8,17 @@
 // ==/UserScript==
 
 addGlobalStyle(
-    ".console-debug, .console-debug *      { color: purple !important}" +
-    ".console-minor, .console-minor *      { color: #555 !important}" +
-    ".console-faded, .console-faded *      { color: #888 !important}" +
-    ".console-normal, .console-normal *    { color: #ddd }" +
-    ".console-important, .console-important span { color: #C2E812 }" +
-    ".console-warning, .console-warning * { color: orange }" +
-    ".console-success, .console-success * { color: #13CD48 }" +
-    ".console-error, .console-error * { color: #F00 }" +
-    ".console-hidden { display: none }"+
-    ".console-stage { background-color: #2E5A61 !important; padding: 20px 10px !important; color: white !important; margin: 5px 0; }"+
-    ".console-stage span { background-color: #2E5A61 !important; padding: 20px 0 !important; color: white !important; }"
+    "div.console-debug, div.console-debug *      { color: purple }" +
+    "div.console-minor, div.console-minor *      { color: #555 }" +
+    "div.console-faded, div.console-faded *      { color: #888 }" +
+    "div.console-normal, div.console-normal *    { color: #ddd }" +
+    "div.console-important, div.console-important span { color: #C2E812 }" +
+    "div.console-warning, div.console-warning *  { color: orange }" +
+    "div.console-success, div.console-success *  { color: #13CD48 }" +
+    "div.console-error, div.console-error *      { color: #F00 }" +
+    "div.console-hidden { display: none }"+
+    "div.console-stage { background-color: #2E5A61 !important; padding: 20px 10px !important; color: white !important; margin: 5px 0; }"+
+    "div.console-stage span { background-color: #2E5A61 !important; padding: 20px 0 !important; color: white !important; }"
 ); // 58A4B0 373F51
 
 var timer = setInterval(parse_console_blocks, 0);
