@@ -32,15 +32,14 @@ var patterns = [
 
     // git logs
     { minor: /&gt; git / },
-    { minor: /The recommended git tool/ },
-    { minor: />Running in Durability level/ },
-    { minor: />Attempting to resolve/ },
+    { minor: /^The recommended git tool/ },
+    { minor: /^Running in Durability level/ },
+    { minor: /^Attempting to resolve/ },
     { minor: /^using credential/ },
     { minor: /^Found match/ },
     { faded: /^Fetching upstream/ },
     { minor: /^Fetching changes/ },
     { minor: /^[Uu]sing/ },
-    { minor: /Attempting to resolve/ },
     { minor: /^Cloning the / },
     { minor: /^Avoid / },
     { faded: /^Cloning repo/ },
