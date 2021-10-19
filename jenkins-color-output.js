@@ -34,7 +34,7 @@ var patterns = [
     { minor: /&gt; git / },
     { minor: /The recommended git tool/ },
     { minor: /^Running in Durability level/ },
-    { minor: /^Running as/ },
+    { minor: /span> *Running as/i },
     { minor: /^Attempting to resolve/ },
     { minor: /^Found match/ },
     { faded: /^Fetching upstream/ },
