@@ -50,7 +50,8 @@ var patterns = [
     { minor: /^Push event to/ },
     { minor: /^Seen/ },
     { minor: /ssh[-_]agent/i},
-    { minor: /Running ssh-add/ },
+    { minor: /ssh[-_]add/i},
+    { minor: /ssh[-_]auth/i},
     { minor: /Identity added/ },
 
     // docker builds
