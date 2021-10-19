@@ -13,9 +13,9 @@ addGlobalStyle(
     ".console-faded, .console-faded *      { color: #888 !important}" +
     ".console-normal, .console-normal *    { color: #ddd }" +
     ".console-important, .console-important span { color: #C2E812 }" +
-    ".console-warning { color: orange }" +
-    ".console-success { color: #13CD48 }" +
-    ".console-error { color: #F00 }" +
+    ".console-warning, .console-warning * { color: orange }" +
+    ".console-success, .console-success * { color: #13CD48 }" +
+    ".console-error, .console-error * { color: #F00 }" +
     ".console-hidden { display: none }"+
     ".console-stage { background-color: #2E5A61 !important; padding: 20px 10px !important; color: white !important; margin: 5px 0; }"+
     ".console-stage span { background-color: #2E5A61 !important; padding: 20px 0 !important; color: white !important; }"
