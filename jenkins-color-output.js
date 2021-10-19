@@ -32,7 +32,7 @@ var patterns = [
 
     // git logs
     { minor: /&gt; git / },
-    { minor: /^The recommended git tool/ },
+    { minor: /The recommended git tool/ },
     { minor: /^Running in Durability level/ },
     { minor: /^Attempting to resolve/ },
     { minor: /^using credential/ },
