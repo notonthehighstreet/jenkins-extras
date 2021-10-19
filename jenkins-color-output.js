@@ -15,7 +15,7 @@ addGlobalStyle(
     "div.console-important, div.console-important span { color: #C2E812 }" +
     "div.console-warning, div.console-warning *  { color: orange }" +
     "div.console-success, div.console-success *  { color: #13CD48 }" +
-    "div.console-error, div.console-error *      { color: #F00 }" +
+    "div.console-error, div.console-error *      { color: #ff4c4c }" +
     "div.console-hidden { display: none }"+
     "div.console-stage { background-color: #2E5A61 !important; padding: 20px 10px !important; color: white !important; margin: 5px 0; }"+
     "div.console-stage span { background-color: #2E5A61 !important; padding: 20px 0 !important; color: white !important; }"
