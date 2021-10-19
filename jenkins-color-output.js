@@ -42,6 +42,7 @@ var patterns = [
     { minor: /^using/i },
     { minor: /^avoid /i },
     { faded: /^cloning /i },
+    { faded: /span> *cloning /i },
     { faded: /^Commit message/ },
     { faded: /^Checking out Rev/ },
     { minor: /^Loading library/ },
@@ -49,8 +50,8 @@ var patterns = [
     { minor: /^Push event to/ },
     { minor: /^Seen/ },
     { minor: /ssh[-_]agent/i},
-    { minor: /^Running ssh-add/ },
-    { minor: /^Identity added/ },
+    { minor: /Running ssh-add/ },
+    { minor: /Identity added/ },
 
     // docker builds
     { minor: /The push refers to repository/ },
