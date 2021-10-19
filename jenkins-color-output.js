@@ -103,6 +103,7 @@ var patterns = [
     { minor: /\[htmlpublisher\]/ },
     { warning: /skipped due to/ },
     { minor: /\[WS-CLEANUP\]/ },
+    { faded: /Post stage/ },
     { minor: /Slack Send Pipeline step running/ },
     { minor: /GitHub has been notified/ },
 
