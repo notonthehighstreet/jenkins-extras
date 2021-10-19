@@ -8,14 +8,14 @@
 // ==/UserScript==
 
 addGlobalStyle(
-    "div.console-debug, div.console-debug *      { color: purple }" +
-    "div.console-minor, div.console-minor *      { color: #555 }" +
-    "div.console-faded, div.console-faded *      { color: #888 }" +
-    "div.console-normal, div.console-normal *    { color: #ddd }" +
-    "div.console-important, div.console-important span { color: #C2E812 }" +
-    "div.console-warning, div.console-warning *  { color: orange }" +
-    "div.console-success, div.console-success *  { color: #13CD48 }" +
-    "div.console-error, div.console-error *      { color: #ff4c4c }" +
+    "div.console-debug, div.console-debug *      { color: purple !important }" +
+    "div.console-minor, div.console-minor *      { color: #555 !important }" +
+    "div.console-faded, div.console-faded *      { color: #888 !important }" +
+    "div.console-normal, div.console-normal *    { color: #ddd !important }" +
+    "div.console-important, div.console-important span { color: #C2E812 !important }" +
+    "div.console-warning, div.console-warning *  { color: orange !important }" +
+    "div.console-success, div.console-success *  { color: #13CD48 !important }" +
+    "div.console-error, div.console-error *      { color: #ff4c4c !important }" +
     "div.console-hidden { display: none }"+
     "div.console-stage { background-color: #2E5A61 !important; padding: 20px 10px !important; color: white !important; margin: 5px 0; }"+
     "div.console-stage span { background-color: #2E5A61 !important; padding: 20px 0 !important; color: white !important; }"
