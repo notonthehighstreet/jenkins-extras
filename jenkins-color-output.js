@@ -103,6 +103,7 @@ var patterns = [
     { faded: /INFO/ },
     { faded: /Info/ },
     { warning: /warning/i },
+    { minor: /WARNING abort infinite/ },
     { error: /error/i },
     { success: /^successfully/i },
 
