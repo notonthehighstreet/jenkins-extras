@@ -102,8 +102,8 @@ var patterns = [
     // generic logs
     { faded: /INFO/ },
     { faded: /Info/ },
-    { warning: /warning/i },
     { minor: /WARNING abort infinite/ },
+    { warning: /warning/i },
     { error: /error/i },
     { success: /^successfully/i },
 
