@@ -21,7 +21,7 @@ addGlobalStyle(
     "div.console-stage span { background-color: #2E5A61 !important; padding: 20px 0 !important; color: white !important; }"
 ); // 58A4B0 373F51
 
-var timer = setInterval(parse_console_blocks, 0);
+var timer = setInterval(parse_console_blocks, 150);
 
 var foundBlocksTimeout = 10;
 
