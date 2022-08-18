@@ -20,4 +20,5 @@ function rename_pull_requests_links() {
             pr_link.text = pr_link.title + " (" + pr_link.pr_number + ")"
         })
     }
+    clearInterval(timer)
 }
