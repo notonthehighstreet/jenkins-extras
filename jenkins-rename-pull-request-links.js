@@ -9,11 +9,15 @@
 // @grant        none
 // ==/UserScript==
 
-if (window.location.pathname.match(/view\/change-requests/)) {
-    console.log("looking for PR links...")
-    $$('#projectstatus a.model-link').each(function(pr_link) {
-        console.log("hello world")
-        pr_link.pr_number = pr_link.text
-        pr_link.text = pr_link.title + " (" + pr_link.pr_number + ")"
-    })
+var timer = setInterval(rename_pull_requests_links, 150);
+
+function rename_pull_requests_links() {
+    if (window.location.pathname.match(/view\/change-requests/)) {
+        console.log("looking for PR links...")
+        $$('#projectstatus a.model-link').each(function(pr_link) {
+            console.log("hello world")
+            pr_link.pr_number = pr_link.text
+            pr_link.text = pr_link.title + " (" + pr_link.pr_number + ")"
+        })
+    }
 }
