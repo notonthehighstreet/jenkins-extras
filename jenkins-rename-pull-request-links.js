@@ -10,6 +10,7 @@
 // ==/UserScript==
 
 if (window.location.pathname.match(/view\/change-requests/)) {
+    console.log("looking for PR links...")
     $$('#projectstatus a.model-link').each(function(pr_link) {
         console.log("hello world")
         pr_link.pr_number = pr_link.text
