@@ -17,10 +17,11 @@ function rename_pull_requests_links() {
         var pr_links = $$('#projectstatus a.model-link')
         if (pr_links) {
             pr_links.each(function(pr_link) {
-                pr_link.pr_number = pr_link.text
+                if (!pr_link.pr_number) {
+                    pr_link.pr_number = pr_link.text
+                }
                 pr_link.text = pr_link.title + " (" + pr_link.pr_number + ")"
             })
-            clearInterval(timer)
         } else if (retryCount <= 0) {
             clearInterval(timer)
         }
