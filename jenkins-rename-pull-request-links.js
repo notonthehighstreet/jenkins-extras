@@ -14,9 +14,9 @@ var retryCount = 10;
 
 function rename_pull_requests_links() {
     if (window.location.pathname.match(/view\/change-requests/)) {
-        var pr_links = $$('#projectstatus a.model-link')
+        var pr_links = document.querySelectorAll('#projectstatus a.model-link');
         if (pr_links) {
-            pr_links.each(function(pr_link) {
+            pr_links.forEach(function(pr_link) {
                 if (!pr_link.pr_number) {
                     pr_link.pr_number = pr_link.text
                 }
