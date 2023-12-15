@@ -135,7 +135,7 @@ function parse_console_blocks() {
 
     function parse_console_block(block) {
         console.log("Processing text block", block);
-        Element.addClassName(block, "parsed");
+        block.classList.add("parsed");
 
         var lines = block.innerHTML.split("\n");
 
