@@ -122,7 +122,7 @@ var patterns = [
 ];
 
 function parse_console_blocks() {
-    var consoleBlocks = $$("pre.console-output:not(.parsed), #out pre:not(.parsed)");
+    var consoleBlocks = document.querySelectorAll("pre.console-output:not(.parsed), #out pre:not(.parsed)");
 
     var foundBlocks = consoleBlocks.length > 0;
     if(foundBlocks) {
